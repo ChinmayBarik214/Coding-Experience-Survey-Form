@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Coding Experience Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title">Coding Experience Survey</h1>
+    <p id="description">Thank you for taking the time to help us encourage the general public to take up the skill</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" name="name" type="text" class="form-control" placeholder="Enter your Name" required>
+    </div>
+    <div class="form-group">
+      <label for="email" id="email-label">Email</label>
+      <input id="email" name="email" type="email" class="form-control" placeholder="Enter your Email" required>
+    </div>
+    <div class="form-group">
+      <label for="number" id="number-label">
+        Age<span class="clue">(optional)</span>
+      </label>
+      <input id="number" name="age" type="number" class="form-control" min="7" max="115" placeholder="Age">
+    </div>
+    <div class="form-group">
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="freelancer">Freelancer</option>
+        <option value="hobbyist">hobbyist</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Would you recommend coding to a friend?</p>
+      <label>
+      <input type="radio" name="recommend" class="input-radio" value="definitely">Definitely
+      </label>
+      <label>
+      <input type="radio" name="recommend" class="input-radio" value="maybe">Maybe
+      </label>
+      <label>
+      <input type="radio" name="recommend" class="input-radio" value="Not sure">Not sure
+      </label>
+    </div>
+    <div class="form-group">
+      <p>
+        Which coding fields have you worked on?<span class="clue">(Check all that apply)</span>
+      </p>
+      <label>
+        <input name="field" type="checkbox" class="input-checkbox" value="Developing software">Developing software
+      </label>
+      <label>
+        <input name="field" type="checkbox" class="input-checkbox" value="front-end-projects">Front-end Web Development
+      </label>
+      <label>
+        <input name="field" type="checkbox" class="input-checkbox" value="back-end-Projects">Back-end Web Development
+      </label>
+      <label>
+        <input name="field" type="checkbox" class="input-checkbox" value="game-development">Game Development
+      </label>
+      <label>
+        <input name="field" type="checkbox" class="input-checkbox" value="database-management">Database Management
+      </label>
+      <label>
+        <input name="field" type="checkbox" class="input-checkbox" value="data-analysis">Data analysis
+      </label>
+      <label>
+        <input name="field" type="checkbox" class="input-checkbox" value="creating-web-services">Creating Web Services
+      </label>
+      <label>
+        <input name="field" type="checkbox" class="input-checkbox" value="other">Other
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="journey">How would you describe your coding journey?</label>
+      <textarea id="journey" name="journey" class="input-textarea" placeholder="Enter your response here…"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
